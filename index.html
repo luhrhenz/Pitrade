@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profit Wallet Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash">
+    <div class="logo">PI <span>TRADE</span></div>
+    <div class="loader"></div>
+  </div>
+
+  <!-- Login Page -->
+  <section id="login" class="hidden">
+    <h2>Welcome Back</h2>
+    <p>Secure Login to Continue</p>
+
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Email or Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+
+      <!-- Advanced Options -->
+      <div id="extraFields" class="hidden">
+        <input type="text" placeholder="2FA Code (optional)">
+        <input type="text" placeholder="Recovery Phrase Hint">
+      </div>
+
+      <button type="submit">Login</button>
+      <a href="#" id="toggleAdvanced">Show Advanced Options</a>
+    </form>
+  </section>
+
+  <!-- Dashboard -->
+  <section id="dashboard" class="hidden">
+    <header>
+      <h2>Hello, Mrs Yoj Sarbam Nodpen</h2>
+      <div class="profile">
+        <img src="1729483140543.jpg" alt="Profile" />
+      </div>
+    </header>
+
+    <div class="balance-card">
+      <h3>Wallet Balance</h3>
+      <p class="amount">₱ 110,202,450.00</p>
+      <button id="withdrawBtn">Withdraw</button>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs">
+      <button class="active" data-tab="overview">Overview</button>
+      <button data-tab="transactions">Transactions</button>
+      <button data-tab="earn">Profit Growth</button>
+    </nav>
+
+    <!-- Tab Contents -->
+    <div id="overview" class="tab-content show">
+      <h3>Overview</h3>
+      <canvas id="profitChart"></canvas>
+    </div>
+
+    <div id="transactions" class="tab-content">
+      <h3>Profit Transactions</h3>
+      <p>No withdrawals detected. Deposits confirmed and secured.</p>
+    </div>
+
+    <div id="earn" class="tab-content">
+      <h3>Profit Earnings</h3>
+      <p>Your profit growth summary will appear here.</p>
+    </div>
+  </section>
+
+  <!-- Withdraw Modal -->
+  <div id="withdrawModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Withdraw Funds</h3>
+      <input type="text" placeholder="Account Name" disabled>
+      <input type="number" placeholder="Account Number" disabled>
+      <input type="number" placeholder="Amount" disabled>
+      <p class="frozen-text">⚠ Account Frozen — Some functions may not work</p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="main.js"></script>
+<!-- Footer -->
+<footer id="footer">
+  <p>© PiTrade 2025</p>
+</footer>
+</body>
+</html>
