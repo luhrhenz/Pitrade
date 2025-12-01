@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   
-  // Ensure modal hidden immediately
   const modal = document.getElementById("withdrawModal");
   modal.classList.add("hidden");
   
