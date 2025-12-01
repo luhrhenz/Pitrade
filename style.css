@@ -79,7 +79,7 @@ body {
 
 #login input {
   display: block;
-  width: 400px;
+  width: 320px;
   max-width: 90%;
   margin: 12px auto;
   padding: 16px;
@@ -122,7 +122,7 @@ header {
   margin-bottom: 25px;
 }
 
-header h2 { font-size: 1.9rem; }
+header h2 { font-size: 1.8rem; }
 
 .profile img { width: 60px; height: 60px; border-radius: 50%; }
 
@@ -134,11 +134,11 @@ header h2 { font-size: 1.9rem; }
   text-align: center;
 }
 
-.balance-card h3 { font-size: 1.5rem; }
+.balance-card h3 { font-size: 1.3rem; }
 
 .balance-card .amount { font-size: 2.8rem; margin: 15px 0; }
 
-#withdrawBtn { background: #0099ff; color: black; padding: 14px 20px; font-size: 1.4rem; border-radius: 8px; cursor: pointer; }
+#withdrawBtn { background: #0099ff; color: black; padding: 14px 20px; font-size: 1.1rem; border-radius: 8px; cursor: pointer; }
 
 /* Tabs */
 .tabs { display: flex; gap: 10px; margin-bottom: 20px; }
@@ -146,7 +146,7 @@ header h2 { font-size: 1.9rem; }
 .tabs button {
   flex: 1;
   padding: 16px;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   border-radius: 8px;
   background: #111827;
   color: white;
@@ -155,7 +155,7 @@ header h2 { font-size: 1.9rem; }
 .tabs .active { background: #0ff; color: black; }
 
 /* Tab Content */
-.tab-content { display: none; margin-top: 20px; font-size: 1.5rem; }
+.tab-content { display: none; margin-top: 20px; font-size: 1rem; }
 .tab-content.show { display: block; }
 
 /* Modal */
